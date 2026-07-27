@@ -1,0 +1,143 @@
+.fridge-item {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #faf6f0, #f5f0e8);
+  border: 2px solid rgba(201, 169, 97, 0.3);
+  box-shadow: 0 6px 20px rgba(61, 40, 23, 0.15);
+  transition: all 0.3s ease;
+}
+
+.fridge-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(61, 40, 23, 0.25);
+  border-color: rgba(201, 169, 97, 0.5);
+}
+
+.fridge-item.status-fresh {
+  border-left: 5px solid #8b9d77;
+}
+
+.fridge-item.status-expiring {
+  border-left: 5px solid #d4a574;
+  background: linear-gradient(135deg, #fdf5eb, #faf0e0);
+}
+
+.fridge-item.status-expired {
+  border-left: 5px solid #b87333;
+  background: linear-gradient(135deg, #f5e6d3, #f0dcc5);
+}
+
+.item-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.item-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5f0e8, #e8d4c0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px rgba(61, 40, 23, 0.15);
+}
+
+.item-details {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.item-name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #3d2817;
+  margin-bottom: 0.25rem;
+  font-family: 'Georgia', serif;
+  text-transform: capitalize;
+}
+
+.item-quantity {
+  font-size: 0.875rem;
+  color: #7a4f3a;
+  font-weight: 600;
+}
+
+.item-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-fresh-text { color: #8b9d77; }
+.status-expiring-text { color: #b87333; }
+.status-expired-text { color: #b87333; }
+
+.item-expiry {
+  font-size: 0.8rem;
+  color: #7a4f3a;
+  margin-top: 0.25rem;
+}
+
+.item-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  font-family: 'Georgia', serif;
+}
+
+.btn-use {
+  background: linear-gradient(135deg, #8b9d77, #a8b896);
+  color: white;
+  box-shadow: 0 3px 10px rgba(139, 157, 119, 0.3);
+}
+
+.btn-use:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 157, 119, 0.4);
+}
+
+.btn-shop {
+  background: linear-gradient(135deg, #c9a961, #d4af37);
+  color: white;
+  box-shadow: 0 3px 10px rgba(201, 169, 97, 0.3);
+}
+
+.btn-shop:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(201, 169, 97, 0.4);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #b87333, #cd853f);
+  color: white;
+  padding: 0.625rem 0.875rem;
+  box-shadow: 0 3px 10px rgba(184, 115, 51, 0.3);
+}
+
+.btn-delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(184, 115, 51, 0.4);
+}
